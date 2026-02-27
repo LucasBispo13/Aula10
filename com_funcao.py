@@ -25,6 +25,10 @@ def listar_alunos():
     else:
         print("A lista está vazia")
 
+def quantidade():
+    quantia = len(alunos)
+    print(f"A quantidade de cadastrados é {quantia}")
+
 alunos = []
 
 while True:
@@ -37,9 +41,8 @@ while True:
             
         case "2":listar_alunos()
 
-        case "3":
-            quantidade = len(alunos)
-            print(f"A quantidade de cadastrados é {quantidade}")
+        case "3":quantidade()
+            
     
         case "4":
             print("Encerrando ")
