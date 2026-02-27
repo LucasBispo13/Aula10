@@ -1,6 +1,6 @@
 def meunu_opcoes(): 
     print("===Sistema Escolar===")
-    print("1- Cadastrar Aluno\n2- Listar alunos \n3- Sair")
+    print("1- Cadastrar Aluno\n2- Listar alunos \n3- Quantidade de Cadastrados \n4- Sair")
 
 def cadastro_aluno():
     nome = input("Digite o nome do aluno: ")
@@ -36,8 +36,12 @@ while True:
         case "1":cadastro_aluno()
             
         case "2":listar_alunos()
-    
+
         case "3":
+            quantidade = len(alunos)
+            print(f"A quantidade de cadastrados é {quantidade}")
+    
+        case "4":
             print("Encerrando ")
             break
         case _:
