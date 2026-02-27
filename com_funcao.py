@@ -19,8 +19,11 @@ def cadastro_aluno():
     print("Aluno cadastrados com sucesso")
 
 def listar_alunos():
-    for aluno in alunos:
-        print(aluno) 
+    if len(aluno) > 0:
+        for aluno in alunos:
+         print(aluno)
+    else:
+        print("A lista está vazia")
 
 alunos = []
 
@@ -33,7 +36,7 @@ while True:
         case "1":cadastro_aluno()
             
         case "2":listar_alunos()
-
+    
         case "3":
             print("Encerrando ")
             break
